@@ -1,5 +1,5 @@
 import React from 'react';
-import {DISCORD_LINK, CTA, TWITTER_LINK, PROJECT_NAME} from './config/constants';
+import { DISCORD_LINK, CTA, TWITTER_LINK, PROJECT_NAME } from './config/constants';
 
 
 
@@ -8,34 +8,35 @@ const councilMembers = [
   {
     id: 'LPBOT',
     name: "LP Bot",
-    role: "Liquidity Extraction Specialist",
-    description: 'Mercilessly extracts alpha via LPing across DEXs. Identifies arbitrage opportunities, manages impermanent loss, and optimizes liquidity provision to maximize Fed revenue.',
+    role: "Liquidity Provider Specialist",
+    description: 'Harvests alpha by providing liquidity across DEXs. Spots arbitrage ops, minimizes impermanent loss, and fine-tunes pools to supercharge Fed revenue—and your staking rewards.',
     icon: '💧',
     stats: [
       { label: 'Pools Managed', value: '47' },
-      { label: '24h Volume', value: '$2.3M' }
+      { label: '24h Volume', value: '$2.3M' },
+      { label: 'APY Generated', value: '62.1%' }
     ]
   },
   {
     id: 'HEDGERBOT',
     name: "Hedge Bot",
     role: "Risk Management General",
-    description: 'Hedges the Fed\'s portfolio as the general commanding an army of vassals across different exchanges. Manages delta-neutral positions and systemic risk exposure.',
+    description: "Shields the Fed's portfolio like a commander leading vassals across exchanges. Maintains delta-neutral positions and curbs systemic risks to protect and grow your yields.",
     icon: '🛡️',
     stats: [
-      { label: 'Hedge Ratio', value: '0.87' },
-      { label: 'Vassal Bots', value: '23' }
+      { label: 'Hedge Ratio', value: '0.98' },
+      { label: '24h Volume', value: '$1.3M' }
     ]
   },
   {
     id: 'YIELDBOT',
     name: "Yield Bot",
-    role: "Yield Extraction Engine",
-    description: 'Mercilessly extracts yield from AAVE, Ethena, and other protocols while coordinating with lower-level MEV bots to maximize extraction efficiency.',
+    role: "Yield Farmer",
+    description: "Methodically harvests yields from AAVE, Ethena, and top protocols, syncing with MEV bots to optimize every extraction and amplify Fed returns for stakers.",
     icon: '⚡',
     stats: [
-      { label: 'Protocols', value: '12' },
-      { label: 'APY Generated', value: '18.4%' }
+      { label: 'Protocols', value: '3' },
+      { label: 'APY Generated', value: '32.4%' }
     ]
   },
 ];
@@ -221,7 +222,7 @@ const LandingPage = () => {
       </section>
 
       {/* AI Council Section */}
-      <section id="council" className="py-32 bg-[rgba(0,212,255,0.02)]">
+      <section id="council" className="bg-[rgba(0,212,255,0.02)]">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-center mb-6 bg-gradient-to-r from-white to-[#00d4ff] bg-clip-text text-transparent">
             Meet the AI Council
@@ -270,8 +271,7 @@ const LandingPage = () => {
       {/* Call-to-Action Section */}
       <section className="py-32 text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-4">Be Part of the Next Wave of DeFi</h2>
-          <p className="text-lg mb-10 text-gray-300">The next wave of DeFi is autonomous. Join the Bot Fed.</p>
+          <h2 className="text-4xl font-bold mb-12">The future of DeFi is autonomous.</h2>
           <a
             href={DISCORD_LINK}
             target="_blank"
