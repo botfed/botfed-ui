@@ -15,7 +15,7 @@ const font = Font({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: PROJECT_NAME,
-  description: 'Join the waitlist for EternaFi',
+  description: 'Join the waitlist for ' + {PROJECT_NAME},
 };
 
 export default function RootLayout({
