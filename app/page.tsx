@@ -183,7 +183,7 @@ const LandingPage = () => {
       {/* Features Section */}
       <section
         id="features"
-        className="py-32"
+        className="pb-32"
         style={{ background: 'linear-gradient(180deg, transparent, rgba(156, 68, 255, 0.05))' }}
       >
         <div className="max-w-6xl mx-auto px-6">
