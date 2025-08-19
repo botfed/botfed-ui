@@ -9,7 +9,7 @@ import './globals.css';
 import '@rainbow-me/rainbowkit/styles.css';
 
 
-const PROJECT_NAME = process.env.NEXT_PUBLIC_PROJECT_NAME || "Atlas";
+const PROJECT_NAME = process.env.NEXT_PUBLIC_PROJECT_NAME || "BotFed";
 const font = Font({ subsets: ["latin"], display: "swap" });
 
 
