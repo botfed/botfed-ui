@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { useAccount, useDisconnect } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { DISCORD_LINK, CTA, PROJECT_NAME } from '../config/constants';
 
-const PROJECT_NAME = process.env.NEXT_PUBLIC_PROJECT_NAME || "BotFed";
 
 const BotFedLogo = ({ className = "" }) => (
   <svg className={className} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -51,8 +51,8 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-        ? 'bg-[rgba(10,10,10,0.98)] backdrop-blur-xl'
-        : 'bg-[rgba(10,10,10,0.95)] backdrop-blur-xl'
+      ? 'bg-[rgba(10,10,10,0.98)] backdrop-blur-xl'
+      : 'bg-[rgba(10,10,10,0.95)] backdrop-blur-xl'
       } border-b border-white/10`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center py-4">
@@ -92,6 +92,23 @@ const Navbar = () => {
 
           {/* Wallet Connection */}
           <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row">
+              <a
+                href={DISCORD_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-[#9c44ff] to-[#00d4ff] px-4 py-2 rounded-2xl font-semibold text-lg hover:transform hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(156,68,255,0.4)] transition-all text-center"
+              >
+                {CTA}
+              </a>
+
+              {/*
+                <button className="bg-white/5 border border-white/20 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 hover:border-white/40 transition-all">
+                  How It Works
+                </button>
+               */}
+            </div>
+            {/*
             {isConnected ? (
               <div className="flex items-center gap-3">
                 <div className="bg-white/5 border border-white/20 rounded-xl px-4 py-2 backdrop-blur-sm">
@@ -125,6 +142,7 @@ const Navbar = () => {
                 <ConnectButton showBalance={false} />
               </div>
             )}
+          */}
           </div>
 
           {/* Mobile Menu Button */}

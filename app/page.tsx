@@ -1,12 +1,7 @@
 import React from 'react';
+import {DISCORD_LINK, CTA, TWITTER_LINK, PROJECT_NAME} from './config/constants';
 
-const TYPEFORM_LINK = "https://form.typeform.com/to/o24K7G5d";
-const TWITTER_LINK = "https://x.com/botfedai";
-const GITBOOK_LINK = "https://atlas-21.gitbook.io/atlas";
-const DISCORD_LINK = "https://discord.gg/FH8zSBzc";
-const PROJECT_NAME = process.env.NEXT_PUBLIC_PROJECT_NAME || "BotFed";
 
-const CTA = 'Join the Fed';
 
 // AI Council members
 const councilMembers = [
@@ -278,7 +273,7 @@ const LandingPage = () => {
           <h2 className="text-4xl font-bold mb-4">Be Part of the Next Wave of DeFi</h2>
           <p className="text-lg mb-10 text-gray-300">The next wave of DeFi is autonomous. Join the Bot Fed.</p>
           <a
-            href={TYPEFORM_LINK}
+            href={DISCORD_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-[#9c44ff] to-[#00d4ff] px-8 py-4 rounded-2xl font-semibold text-lg hover:transform hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(156,68,255,0.4)] transition-all inline-block"
