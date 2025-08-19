@@ -183,7 +183,7 @@ const LandingPage = () => {
       {/* Features Section */}
       <section
         id="features"
-        className="pb-32"
+        className="py-16"
         style={{ background: 'linear-gradient(180deg, transparent, rgba(156, 68, 255, 0.05))' }}
       >
         <div className="max-w-6xl mx-auto px-6">
@@ -269,7 +269,7 @@ const LandingPage = () => {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-32 text-center">
+      <section className="py-16 text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-12">The future of DeFi is autonomous.</h2>
           <a
