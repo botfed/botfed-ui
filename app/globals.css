@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Updated colors for BotFed design */
+  --primary-color: #9c44ff;
+  --secondary-color: #00d4ff;
+  --background-dark: #0a0a0a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-dark);
+  color: var(--text-primary);
+}
+
+/* Chart Animation */
+@keyframes chartGrow {
+  from { 
+    transform: scaleX(0); 
+  }
+  to { 
+    transform: scaleX(1); 
+  }
+}
+
+.chart-animate {
+  animation: chartGrow 2s ease-out forwards;
+}
+
+/* Utility Classes */
+.bg-primary {
+  background-color: var(--background-dark);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* CTA Button (for compatibility with existing code) */
+.btn-cta {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 16px 32px;
+  border-radius: 16px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(156, 68, 255, 0.4);
+}
